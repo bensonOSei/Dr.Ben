@@ -20,6 +20,7 @@ html, body {
 body {
   margin: 0;
   font-family: myFont;
+  background-color: #b4ddb4;
 }
 
 .heading {
@@ -68,24 +69,90 @@ main {
 }
 
 .details {
+  text-align: center;
+  margin: 10px;
+  padding: 30px;
+}
+
+.details a {
+  text-decoration: none;
+  color: black;
+  background-color: #b4ddb4;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.details-modal {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
+  place-items: center;
+  position: fixed;
+  top: 0;
+  height: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.96);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  overflow: hidden;
 }
 
-.details .heading {
-  grid-column: 1/-1;
-  letter-spacing: 10px;
-  font-variant: unset;
+.details-modal .heading {
+  color: white;
 }
 
-.details h3 {
-  background-color: #b4ddb4;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 5px;
+.modal-body {
+  margin: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.modal-head {
+  width: 100%;
+  padding: 10px;
+  color: #444;
+  margin-bottom: 10px;
+  border: none;
+  font-family: myFont;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#close-det {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #ccc;
+}
+
+.mod-details {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .2s ease-out;
+  transition: max-height .2s ease-out;
+}
+
+.modal-head:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
 }
 
 .det-box {

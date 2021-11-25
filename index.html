@@ -21,49 +21,72 @@
                 <img src="rip daddy.jpg" alt="">
             </div>
             <p style="text-align: center;">The entire family of Dr.Bernard Osei-Mensah invites you to the final funeral rites of their beloved. <br>
-            Find details below</p>
+            Click the button below for details</p>
 
             <hr>
 
             <div class="details">
-                <h2 class="heading">FUNERAL ARRANGEMENTS</h2>
+                <a href="javascript:void(0)" onclick="openDetailsModal()">
+                    FUNERAL ARRANGEMENTS
+                </a>
+            </div>
+        </div>
 
-                <div class="det-box">
-                    <h3>LYING IN STATE</h3>
+        <div class="details-modal" id="det-modal">
+            <div id="close-det">
+                <p onclick="closeDet()">&times;</p>
+            </div>
+
+            <h2 class="heading">FUNERAL ARRANGEMENTS</h2>
+
+            <div class="modal-body">
+                <button class="modal-head">
+                    Lying In State
+                </button>
+                <div class="mod-details">
                     <p><span class="bld">Venue:</span> Presbyterien Church of Ghana - Trinity Congregation, Abrepo</p>
                     <p><span class="bld">Date:</span> Sat. 27th November, 2021</p>
                     <p><span class="bld">Time:</span> 5:00am</p>
                 </div>
-                <div class="det-box">
-                    <h3>BURIAL SERVICE</h3>
+    
+                <button class="modal-head">
+                    Burial Service
+                </button>
+                <div class="mod-details">
                     <p><span class="bld">Venue:</span> Presbyterien Church of Ghana - Trinity Congregation, Abrepo</p>
                     <p><span class="bld">Date:</span> Sat. 27th November, 2021</p>
                     <p><span class="bld">Time:</span> 8:00am</p>
                 </div>
-                <div class="det-box">
-                    <h3>BURIAL</h3>
-                    <p><span class="bld">Venue:</span> Ohwim Cemetary</p>
-                    <p><span class="bld">Date:</span> Sat. 27th November, 2021</p>
-                </div>
-                <div class="det-box">
-                    <h3>FINAL FUNERAL RITE</h3>
+    
+                <button class="modal-head">
+                    Final Funeral Rite
+                </button>
+                <div class="mod-details">
                     <p><span class="bld">Venue:</span> St.Anthony's Homeopathic Hospital</p>
                     <p><span class="bld">Date:</span> Sat. 27th November, 2021</p>
                     <p><span class="bld">Time:</span> 12:00pm - 6:00pm</p>
                 </div>
-                <div class="det-box">
-                    <h3>THANKSGIVING SERVICE</h3>
+    
+                <button class="modal-head">
+                    Thanksgiving Service
+                </button>
+                <div class="mod-details">
                     <p><span class="bld">Venue:</span> Presbyterien Church of Ghana - Trinity Congregation, Abrepo</p>
                     <p><span class="bld">Date:</span> SUN. 28TH November, 2021</p>
                     <p><span class="bld">Time:</span> 8:00am</p>
                 </div>
-                <div class="det-box">
-                    <h3>FAMILY GATHERING</h3>
+    
+                <button class="modal-head">
+                   Family Gathering
+                </button>
+                <div class="mod-details">
                     <p><span class="bld">Venue:</span> St.Anthony's Homeopathic Hospital</p>
                     <p><span class="bld">Date:</span> SUN. 28TH November, 2021</p>
                     <p><span class="bld">Time:</span> 12:00PM - 6:00PM</p>
                 </div>
             </div>
+
+
         </div>
 
     </main>
